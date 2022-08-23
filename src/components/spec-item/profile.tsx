@@ -13,6 +13,7 @@ import {
   SiUplabs,
 } from "react-icons/si"
 import { bio } from "@/utils/"
+import cv from "../../utils/cv-muhrusdi-2022.pdf"
 
 const ProfileItem: React.FC = () => (
   <div>
@@ -179,7 +180,7 @@ const ProfileItem: React.FC = () => (
             <span>
               <a
                 className="bg-indigo-500 text-sm px-4 py-1 inline-block font-semibold rounded-full text-white"
-                href="https://rus.pages.dev/static/cv-muhrusdi-2022-6a53d3ae117821f6ec663b2cc9718035.pdf"
+                href={cv}
                 target="_blank"
                 rel="noreferrer"
               >
