@@ -13,7 +13,7 @@ import {
   SiUplabs,
 } from "react-icons/si"
 import { bio } from "@/utils/"
-import cv from "../../utils/cv-muhrusdi-2022.pdf"
+import cv from "../../utils/cv-muhrusdi-2023.pdf"
 
 const ProfileItem: React.FC = () => (
   <div>
