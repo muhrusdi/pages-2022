@@ -11,6 +11,7 @@ import {
   SiLinkedin,
   SiTwitter,
   SiUplabs,
+  SiYoutube,
 } from "react-icons/si"
 import { bio } from "@/utils/"
 import cv from "../../utils/cv-muhrusdi-2023.pdf"
@@ -137,6 +138,28 @@ const ProfileItem: React.FC = () => (
               <a
                 className="text-indigo-500"
                 href="https://instagram.com/mhmrofficial/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                mhmrofficial
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
+          <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
+            <span className="mr-3">
+              <SiYoutube />
+            </span>
+            <span>Youtube</span>
+          </div>
+          <div className="w-3/5">
+            <span>
+              <a
+                className="text-indigo-500"
+                href="https://www.youtube.com/channel/UC5GRIir7WN7t1HrQEeXAcmA"
                 target="_blank"
                 rel="noreferrer"
               >
