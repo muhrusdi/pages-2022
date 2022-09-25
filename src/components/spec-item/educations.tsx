@@ -47,7 +47,7 @@ const EducationsItem: React.FC = () => (
           </div>
         </div>
       </li>
-      <li>
+      {/* <li>
         <div className="flex">
           <div
             className="pr-4 flex-none py-4 text-right hidden sm:block"
@@ -84,7 +84,7 @@ const EducationsItem: React.FC = () => (
             </div>
           </div>
         </div>
-      </li>
+      </li> */}
     </ul>
   </div>
 )

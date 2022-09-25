@@ -126,7 +126,7 @@ const ExperiencesItem: React.FC = () => (
                   Oct 2019 - Currently
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  Makassar, South Sulawesi, Indonesia
+                  D.I. Yogyakarta, Indonesia
                 </p>
               </div>
             </li>

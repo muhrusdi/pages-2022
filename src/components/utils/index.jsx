@@ -40,8 +40,8 @@ export const mocks = [
               <h3 className="text-3xl font-bold mt-2">
                 Web Profile Docotel Teknologi Celebes
               </h3>
-              <a href="https://dtc.co.id" target="_blank" rel="noreferrer">
-                <span className="block mt-2 font-semibold text-gray-400 text-2xl text-blue-500">
+              <a href="#" rel="noreferrer">
+                <span className="block mt-2 font-semibold text-2xl text-blue-500">
                   dtc.co.id
                 </span>
               </a>
@@ -54,7 +54,7 @@ export const mocks = [
             <div className="my-10">
               <h3 className="text-3xl font-bold mt-2">Web Profile Mahapatih</h3>
               <a href="https://mahapatih.id" target="_blank" rel="noreferrer">
-                <span className="block mt-2 font-semibold text-gray-400 text-2xl text-blue-500">
+                <span className="block mt-2 font-semibold text-2xl text-blue-500">
                   mahapatih.id
                 </span>
               </a>
@@ -67,7 +67,7 @@ export const mocks = [
             <div className="my-10">
               <h3 className="text-3xl font-bold mt-2">Awwwara</h3>
               <a href="https://awwwara.com" target="_blank" rel="noreferrer">
-                <span className="block mt-2 font-semibold text-gray-400 text-2xl text-blue-500">
+                <span className="block mt-2 font-semibold text-2xl text-blue-500">
                   awwwara.com
                 </span>
               </a>
