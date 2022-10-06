@@ -9,6 +9,7 @@ import {
   SiGithub,
   SiInstagram,
   SiLinkedin,
+  SiSoundcloud,
   SiTwitter,
   SiUplabs,
   SiYoutube,
@@ -160,6 +161,28 @@ const ProfileItem: React.FC = () => (
               <a
                 className="text-indigo-500"
                 href="https://www.youtube.com/channel/UC5GRIir7WN7t1HrQEeXAcmA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                mhmrofficial
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
+          <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
+            <span className="mr-3">
+              <SiSoundcloud />
+            </span>
+            <span>Souncloud</span>
+          </div>
+          <div className="w-3/5">
+            <span>
+              <a
+                className="text-indigo-500"
+                href="https://soundcloud.com/mhmrofficial"
                 target="_blank"
                 rel="noreferrer"
               >
