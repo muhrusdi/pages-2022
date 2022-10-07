@@ -176,7 +176,7 @@ const ProfileItem: React.FC = () => (
             <span className="mr-3">
               <SiSoundcloud />
             </span>
-            <span>Souncloud</span>
+            <span>Soundcloud</span>
           </div>
           <div className="w-3/5">
             <span>
