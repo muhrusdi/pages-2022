@@ -29,7 +29,7 @@ const FeaturedWork: React.FC = () => {
             <ul className="mt-12 flex -mx-2 items-center">
               <li className="px-2">
                 <a
-                  href="https://github.com/jamastek/sen"
+                  href="https://github.com/muhrusdi/sen"
                   target="_blank"
                   rel="noreferrer"
                   className="text-lg flex items-center mr-2 sm:mr-4"
