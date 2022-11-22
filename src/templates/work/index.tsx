@@ -26,6 +26,8 @@ const Works: React.FC = () => {
               }
             }
           }
+          featured
+          ordered
           category {
             ... on WorkCategory {
               title
@@ -45,6 +47,8 @@ const Works: React.FC = () => {
   `
 
   const { loading, data: dataWorks } = useQuery(WORK_COLLECTION)
+
+  console.log("--dataword", dataWorks)
 
   return (
     <div>
@@ -71,11 +75,13 @@ const Works: React.FC = () => {
             </>
           ) : null}
           {dataWorks
-            ? dataWorks.workCollection.items.map((data, i) => (
-                <li key={i}>
-                  <WorkItem data={data} />
-                </li>
-              ))
+            ? dataWorks.workCollection.items
+                .map((data, i) => (
+                  <li key={i}>
+                    <WorkItem data={data} />
+                  </li>
+                ))
+                .sort(item => !item.featured)
             : null}
         </ul>
       </div>
