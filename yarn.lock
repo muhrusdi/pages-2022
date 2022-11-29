@@ -6822,7 +6822,7 @@ gatsby-plugin-manifest@^5.1.0:
     semver "^7.3.7"
     sharp "^0.30.7"
 
-gatsby-plugin-mdx@^5.1.0:
+gatsby-plugin-mdx@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.2.0.tgz#282221011102717e2a6b55df5da2399cd2a3558d"
   integrity sha512-sRNl4ViUo6T5B28vyWQYSHjzvn53FN7uId1CBL+/0M5d82Rq7QOcrjAPRRLns8joX+OoGtu6BWh/eJUcECzHDw==

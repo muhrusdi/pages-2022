@@ -65,6 +65,10 @@ exports.createPages = async ({ graphql, actions }) => {
               fields {
                 slug
               }
+              internal {
+                contentFilePath
+              }
+              id
               body
               excerpt
             }
@@ -104,6 +108,10 @@ exports.createPages = async ({ graphql, actions }) => {
                 abstract
                 isPublished
               }
+              internal {
+                contentFilePath
+              }
+              id
               fields {
                 slug
               }
@@ -120,8 +128,11 @@ exports.createPages = async ({ graphql, actions }) => {
     const { slug } = node.fields
     createPage({
       path: `/blog/${slug}`,
-      component: path.resolve(`./src/templates/blogs/detail/mdx.tsx`),
+      component: `${path.resolve(
+        "./src/templates/blogs/detail/mdx.tsx"
+      )}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
+        id: node.id,
         slug,
         data: node,
       },
@@ -147,6 +158,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/cheatsheets/detail/index.tsx`),
       context: {
         slug,
+        id: node.id,
         data: node,
       },
     })
