@@ -66,7 +66,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
               }
               body
-              slug
               excerpt
             }
           }
@@ -109,7 +108,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
               }
               body
-              slug
               excerpt
             }
           }

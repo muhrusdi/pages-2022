@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 slug
               }
               body
-              slug
+              # slug
               excerpt
             }
           }

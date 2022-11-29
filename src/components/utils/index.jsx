@@ -1,7 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled, { keyframes } from "styled-components"
-import { Content, Arrow, Trigger, Root } from "@radix-ui/react-tooltip"
+import {
+  Content,
+  Arrow,
+  Trigger,
+  Root,
+  Provider,
+} from "@radix-ui/react-tooltip"
 import { Parser } from "acorn"
 import ExperiencesItem from "../spec-item/experiences"
 import StacksItem from "../spec-item/stacks"
@@ -100,16 +106,18 @@ export const ViewAll = ({ link }) => (
 )
 
 export const TooltipIcon = ({ icon, text }) => (
-  <Root>
-    <Trigger aria-label={text}>{icon}</Trigger>
-    <TooltipContentStyled
-      side="top"
-      className="bg-gray-900 text-xs py-1 px-2 rounded-md"
-    >
-      {text}
-      <TooltipArrowStyled />
-    </TooltipContentStyled>
-  </Root>
+  <Provider>
+    <Root>
+      <Trigger aria-label={text}>{icon}</Trigger>
+      <TooltipContentStyled
+        side="top"
+        className="bg-gray-900 text-xs py-1 px-2 rounded-md"
+      >
+        {text}
+        <TooltipArrowStyled />
+      </TooltipContentStyled>
+    </Root>
+  </Provider>
 )
 
 const acornParser = Parser.extend(require("acorn-jsx")())

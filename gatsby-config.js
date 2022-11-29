@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `./.env.${process.env.NODE_ENV || "development"}`,
 })
 
 module.exports = {
@@ -31,13 +31,6 @@ module.exports = {
       options: {
         name: "docs",
         path: `${__dirname}/src/data/docs`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        gatsbyRemarkPlugins: ["gatsby-remark-images"],
-        extensions: [".mdx", ".md"],
       },
     },
     "gatsby-transformer-sharp",

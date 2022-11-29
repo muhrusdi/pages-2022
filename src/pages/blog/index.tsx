@@ -24,7 +24,7 @@ const Blogs: React.FC = () => {
         slug
       }
       body
-      slug
+      # slug
       excerpt
       internal {
         type

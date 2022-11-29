@@ -1,20 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { compileMDX } from "gatsby-plugin-mdx"
 import CodeBlock from "../codeblock"
 
-const MdxRender = ({ data }: { data: any }) => {
+const MdxRender = ({ data, children }: { data?: any; children: any }) => {
   const shortcodes = {
     Link,
     pre: CodeBlock,
   }
 
-  return (
-    <MDXProvider components={shortcodes}>
-      <MDXRenderer frontmatter={data.frontmatter}>{data.body}</MDXRenderer>
-    </MDXProvider>
-  )
+  return <MDXProvider components={shortcodes}>{children}</MDXProvider>
 }
 
 export default MdxRender

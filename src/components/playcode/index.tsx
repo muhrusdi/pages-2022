@@ -4,7 +4,13 @@ import { Link } from "gatsby"
 import { parseToReact } from "@/components/utils"
 import nightOwl from "monaco-themes/themes/Night Owl.json"
 import { EditorStyled } from "./styled"
-import { Tooltip, TooltipTrigger, StyledContent, StyledArrow } from "../tooltip"
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipTrigger,
+  StyledContent,
+  StyledArrow,
+} from "../tooltip"
 import ReactCanvasConfetti from "react-canvas-confetti"
 
 const snippet = `<h2 className="text-4xl sm:text-4xl sm:leading-12 mt-6 font-black">
@@ -129,21 +135,23 @@ const PlayCode: React.FC = () => {
               style={canvasStyles as React.CSSProperties}
             />
             <div onClick={onOpenChanged} className="inline-block">
-              <Tooltip onOpenChange={onOpenChanged} delayDuration={100}>
-                <TooltipTrigger asChild>
-                  <img
-                    className="h-12 w-12 object-cover cursor-pointer rounded-full ring-4 ring-purple-600"
-                    src="https://res.cloudinary.com/muhrusdi/image/upload/v1616335341/thumb-612467.png"
-                    alt=""
-                  />
-                </TooltipTrigger>
-                <StyledContent side="right" sideOffset={5}>
-                  <span className="font-bold">
-                    Hi there, i&apos;m a Front End Engineer.
-                  </span>
-                  <StyledArrow />
-                </StyledContent>
-              </Tooltip>
+              <TooltipProvider>
+                <Tooltip onOpenChange={onOpenChanged} delayDuration={100}>
+                  <TooltipTrigger asChild>
+                    <img
+                      className="h-12 w-12 object-cover cursor-pointer rounded-full ring-4 ring-purple-600"
+                      src="https://res.cloudinary.com/muhrusdi/image/upload/v1616335341/thumb-612467.png"
+                      alt=""
+                    />
+                  </TooltipTrigger>
+                  <StyledContent side="right" sideOffset={5}>
+                    <span className="font-bold">
+                      Hi there, i&apos;m a Front End Engineer.
+                    </span>
+                    <StyledArrow />
+                  </StyledContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
           {parseToReact(value || snippet)}

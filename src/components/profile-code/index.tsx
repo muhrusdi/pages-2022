@@ -28,7 +28,7 @@ const MemoEditor = memo(({ defaultValue, onMount, onChange }) => (
     defaultValue={defaultValue}
     theme="night-owl"
     onMount={onMount}
-    loading={null}
+    loading={<div></div>}
     onChange={onChange}
   />
 ))
