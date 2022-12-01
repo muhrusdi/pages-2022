@@ -21,6 +21,7 @@ const CheatSheet: React.FC = ({ pageContext }) => {
               fields {
                 slug
               }
+              body
             }
           }
         }

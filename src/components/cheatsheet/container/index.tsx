@@ -48,7 +48,7 @@ const CheatsheetContainer: React.FC = ({ dataCheatsheets, data, slug }) => (
         </h4>
       </div>
       <CheatsheetContent className="prose prose-lg mt-8">
-        <MdxRender data={data} />
+        <MdxRender data={data.body} />
       </CheatsheetContent>
     </div>
   </div>
