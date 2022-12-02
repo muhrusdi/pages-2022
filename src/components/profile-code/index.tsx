@@ -15,7 +15,13 @@ const snippet = `<!-- code editor -->
       my name is Rusdi, i’m ${bio}
     </p>
     <div className="mt-6">
-      <img src="https://res.cloudinary.com/muhrusdi/image/upload/v1635760403/muhrusdi-letter-white.png" className="h-9 mx-auto" alt="" />
+      <div className="relative h-[20px]">
+        <img
+          src="https://res.cloudinary.com/muhrusdi/image/upload/v1669999334/sign-mr.png"
+          className="h-[78px] absolute left-1/2 transform -translate-x-1/2 -top-[36px]"
+          alt=""
+        />
+      </div>
     </div>
   </div>
 </div>
