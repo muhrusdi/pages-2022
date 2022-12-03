@@ -16,7 +16,7 @@ const CheatsheetContent = styled(ArticleStyled)`
 
 export const CheatsheetMenus = ({ data, slug }) => (
   <ul className="mt-6">
-    {data?.cheatsheets.edges.map(({ node }, i) => (
+    {data?.edges?.map(({ node }, i) => (
       <CheatsheetItem
         key={i}
         data={node.childMdx}
@@ -26,7 +26,12 @@ export const CheatsheetMenus = ({ data, slug }) => (
   </ul>
 )
 
-const CheatsheetContainer: React.FC = ({ dataCheatsheets, data, slug }) => (
+const CheatsheetContainer: React.FC = ({
+  dataCheatsheets,
+  data,
+  slug,
+  frontmatter,
+}) => (
   <div className="sm:flex">
     <div className="w-60 flex-none hidden sm:block">
       <div>
@@ -41,14 +46,14 @@ const CheatsheetContainer: React.FC = ({ dataCheatsheets, data, slug }) => (
     <div className="sm:pl-14 w-full" style={{ width: "calc(100% - 240px)" }}>
       <div>
         <h1 className="text-4xl sm:text-5xl font-black">
-          {data.frontmatter.title}
+          {frontmatter?.title}
         </h1>
         <h4 className="text-xl leading-relaxed mt-6">
-          {data.frontmatter.abstract}
+          {frontmatter?.abstract}
         </h4>
       </div>
       <CheatsheetContent className="prose prose-lg mt-8">
-        <MdxRender data={data.body} />
+        <MdxRender data={data} />
       </CheatsheetContent>
     </div>
   </div>

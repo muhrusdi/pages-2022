@@ -8,7 +8,7 @@ import { Layout } from "@/containers/layout"
 const CheatSheet: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      cheatsheets: allFile(
+      firstAllCheatsheets: allFile(
         sort: { fields: childMdx___frontmatter___publishedOn, order: DESC }
         filter: { sourceInstanceName: { eq: "cheatsheets" } }
       ) {
@@ -21,6 +21,9 @@ const CheatSheet: React.FC = () => {
               }
               fields {
                 slug
+              }
+              internal {
+                type
               }
             }
           }
@@ -142,7 +145,7 @@ const CheatSheet: React.FC = () => {
                 placeholder="Search"
               />
             </div>
-            <CheatsheetMenus data={data} />
+            <CheatsheetMenus data={data?.firstAllCheatsheets} />
           </div>
           <div className="sm:px-14">
             <div>

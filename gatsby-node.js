@@ -155,7 +155,9 @@ exports.createPages = async ({ graphql, actions }) => {
     const { slug } = node.fields
     createPage({
       path: `/cheatsheet/${slug}`,
-      component: path.resolve(`./src/templates/cheatsheets/detail/index.tsx`),
+      component: `${path.resolve(
+        "./src/templates/cheatsheets/detail/index.tsx"
+      )}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
         slug,
         id: node.id,

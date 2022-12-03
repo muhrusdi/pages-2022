@@ -4,31 +4,7 @@ import { BsChevronRight } from "react-icons/bs"
 import CheatsheetContainer from "@/components/cheatsheet/container"
 import { Layout } from "@/containers/layout"
 
-const CheatSheet: React.FC = ({ pageContext }) => {
-  const dataCheatsheets = useStaticQuery(graphql`
-    query {
-      cheatsheets: allFile(
-        sort: { fields: childMdx___frontmatter___publishedOn, order: DESC }
-        filter: { sourceInstanceName: { eq: "cheatsheets" } }
-      ) {
-        edges {
-          node {
-            childMdx {
-              frontmatter {
-                title
-                abstract
-              }
-              fields {
-                slug
-              }
-              body
-            }
-          }
-        }
-      }
-    }
-  `)
-
+const CheatSheet: React.FC = ({ pageContext, children, data: dataServe }) => {
   const { data, slug } = pageContext
 
   return (
@@ -138,13 +114,14 @@ const CheatSheet: React.FC = ({ pageContext }) => {
             <BsChevronRight size={12} />
           </li>
           <li className="px-1">
-            <span>{data.frontmatter.title}</span>
+            <span>{dataServe?.cheatsheetMdx?.frontmatter.title}</span>
           </li>
         </ul>
         <div className="mt-6">
           <CheatsheetContainer
-            data={data}
-            dataCheatsheets={dataCheatsheets}
+            data={children}
+            frontmatter={dataServe?.cheatsheetMdx?.frontmatter}
+            dataCheatsheets={dataServe?.allCheatsheets}
             slug={slug}
           />
         </div>
@@ -154,3 +131,36 @@ const CheatSheet: React.FC = ({ pageContext }) => {
 }
 
 export default CheatSheet
+
+export const query = graphql`
+  query CheatsheetDetail($id: String!) {
+    cheatsheetMdx: mdx(id: { eq: $id }) {
+      frontmatter {
+        title
+        abstract
+      }
+    }
+    allCheatsheets: allFile(
+      sort: { fields: childMdx___frontmatter___publishedOn, order: DESC }
+      filter: { sourceInstanceName: { eq: "cheatsheets" } }
+    ) {
+      edges {
+        node {
+          childMdx {
+            frontmatter {
+              title
+              abstract
+            }
+            fields {
+              slug
+            }
+            body
+            internal {
+              type
+            }
+          }
+        }
+      }
+    }
+  }
+`
