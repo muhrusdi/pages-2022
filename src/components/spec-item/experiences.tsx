@@ -89,6 +89,7 @@ const ExperiencesItem: React.FC = () => (
               <h4 className="leading-tight font-bold text-xl">
                 PT. Astra Graphia Information Technology
               </h4>
+              <span className="text-blueGray-500">1 yr</span>
             </div>
           </div>
           <EntityPositionGroup>
@@ -132,6 +133,7 @@ const ExperiencesItem: React.FC = () => (
               <h4 className="leading-tight font-bold text-xl">
                 PT. Dikita Integrasi Indonesia
               </h4>
+              <span className="text-blueGray-500">1 yr 4 mos</span>
             </div>
           </div>
           <EntityPositionGroup>
