@@ -8,24 +8,14 @@ const ExperiencesItem: React.FC = () => (
         <div>
           <div className="flex items-center">
             <CompanyLogo className="mr-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                />
-              </svg>
+              <img
+                src="https://privy.id/assets/cache/upload/privyid-new-logo-264x64.png"
+                alt=""
+              />
             </CompanyLogo>
             <div>
               <h4 className="leading-tight font-bold text-xl">
-                PT. Astra Graphia Information Technology (STAR PROJECT)
+                PT. Privy Identitas Digital
               </h4>
               <span className="text-blueGray-500">Currently</span>
             </div>
@@ -34,57 +24,13 @@ const ExperiencesItem: React.FC = () => (
             <li>
               <div className="leading-relaxed">
                 <h5 className="leading-normal sm:leading-loose">
-                  Front End Engineer{" "}
-                  <span className="text-blueGray-500">Remote</span>
+                  Front End Engineer
                 </h5>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  Nov 2021 - Currently
+                  Nov 2022 - Currently
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  Makassar, South Sulawesi, Indonesia
-                </p>
-              </div>
-            </li>
-          </EntityPositionGroup>
-        </div>
-      </li>
-      <li>
-        <div>
-          <div className="flex items-center">
-            <CompanyLogo className="mr-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                />
-              </svg>
-            </CompanyLogo>
-            <div>
-              <h4 className="leading-tight font-bold text-xl">
-                PT. Dikita Integrasi Indonesia
-              </h4>
-            </div>
-          </div>
-          <EntityPositionGroup>
-            <li>
-              <div className="leading-relaxed">
-                <h5 className="leading-normal sm:leading-loose">
-                  Front End Engineer{" "}
-                  <span className="text-blueGray-500">Remote</span>
-                </h5>
-                <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  Oct 2021 - Currently{" "}
-                </p>
-                <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  Makassar, South Sulawesi, Indonesia
+                  D.I Yogyakarta, Central Java, Indonesia
                 </p>
               </div>
             </li>
@@ -126,7 +72,7 @@ const ExperiencesItem: React.FC = () => (
                   Oct 2019 - Currently
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  D.I. Yogyakarta, Indonesia
+                  D.I. Yogyakarta, Central Java, Indonesia
                 </p>
               </div>
             </li>
@@ -134,6 +80,79 @@ const ExperiencesItem: React.FC = () => (
         </div>
       </li>
       <li>
+        <div>
+          <div className="flex items-center">
+            <CompanyLogo className="mr-6">
+              <img src="https://www.ag-it.com/img/logo.png" alt="" />
+            </CompanyLogo>
+            <div>
+              <h4 className="leading-tight font-bold text-xl">
+                PT. Astra Graphia Information Technology
+              </h4>
+            </div>
+          </div>
+          <EntityPositionGroup>
+            <li className="deactive">
+              <div className="leading-relaxed">
+                <h5 className="leading-normal sm:leading-loose">
+                  Front End Engineer{" "}
+                  <span className="text-blueGray-500">Remote</span>
+                </h5>
+                <p className="text-blueGray-500 mt-3 sm:mt-0">
+                  Nov 2021 - Nov 2022
+                </p>
+                <p className="text-blueGray-500 mt-3 sm:mt-0">
+                  Makassar, South Sulawesi, Indonesia
+                </p>
+              </div>
+            </li>
+          </EntityPositionGroup>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div className="flex items-center">
+            <CompanyLogo className="mr-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-12 w-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                />
+              </svg>
+            </CompanyLogo>
+            <div>
+              <h4 className="leading-tight font-bold text-xl">
+                PT. Dikita Integrasi Indonesia
+              </h4>
+            </div>
+          </div>
+          <EntityPositionGroup>
+            <li className="deactive">
+              <div className="leading-relaxed">
+                <h5 className="leading-normal sm:leading-loose">
+                  Front End Engineer{" "}
+                  <span className="text-blueGray-500">Remote</span>
+                </h5>
+                <p className="text-blueGray-500 mt-3 sm:mt-0">
+                  Oct 2021 - Oct 2022
+                </p>
+                <p className="text-blueGray-500 mt-3 sm:mt-0">
+                  Makassar, South Sulawesi, Indonesia
+                </p>
+              </div>
+            </li>
+          </EntityPositionGroup>
+        </div>
+      </li>
+      {/* <li>
         <div>
           <div className="flex items-center">
             <CompanyLogo className="mr-6">
@@ -164,7 +183,7 @@ const ExperiencesItem: React.FC = () => (
             </li>
           </EntityPositionGroup>
         </div>
-      </li>
+      </li> */}
       {/* <li>
         <div>
           <div className="flex items-center">
