@@ -30,7 +30,7 @@ const ProfileItem: React.FC = () => (
             <span>Email</span>
           </div>
           <div className="w-3/5">
-            <span>mhmrofficial@gmail.com</span>
+            <span>muhrusdev@gmail.com</span>
           </div>
         </div>
       </li>
@@ -116,11 +116,11 @@ const ProfileItem: React.FC = () => (
             <span>
               <a
                 className="text-indigo-500"
-                href="https://twitter.com/mhmrus"
+                href="https://twitter.com/muhrusdev"
                 target="_blank"
                 rel="noreferrer"
               >
-                mhmrus
+                muhrusdev
               </a>
             </span>
           </div>
@@ -138,11 +138,11 @@ const ProfileItem: React.FC = () => (
             <span>
               <a
                 className="text-indigo-500"
-                href="https://instagram.com/mhmrofficial/"
+                href="https://instagram.com/muhrusdev/"
                 target="_blank"
                 rel="noreferrer"
               >
-                mhmrofficial
+                muhrusdev
               </a>
             </span>
           </div>
