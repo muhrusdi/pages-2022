@@ -30,7 +30,7 @@ const ExperiencesItem: React.FC = () => (
                   Nov 2022 - Currently
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  D.I Yogyakarta, Central Java, Indonesia
+                  Yogyakarta, Central Java, Indonesia
                 </p>
               </div>
             </li>
@@ -72,7 +72,7 @@ const ExperiencesItem: React.FC = () => (
                   Oct 2019 - Currently
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  D.I. Yogyakarta, Central Java, Indonesia
+                  Yogyakarta, Central Java, Indonesia
                 </p>
               </div>
             </li>
