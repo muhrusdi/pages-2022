@@ -170,7 +170,7 @@ const ProfileItem: React.FC = () => (
           </div>
         </div>
       </li> */}
-      <li>
+      {/* <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
             <span className="mr-3">
@@ -191,7 +191,7 @@ const ProfileItem: React.FC = () => (
             </span>
           </div>
         </div>
-      </li>
+      </li> */}
       <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
