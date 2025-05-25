@@ -139,12 +139,12 @@ const StacksItem: React.FC = () => (
             </li>
             <li className="mt-4 px-3 py-3">
               <div className="flex flex-col items-center">
-                <StaticImage
+                {/* <StaticImage
                   height={60}
                   placeholder="blurred"
                   src="https://ps.w.org/wp-graphql/assets/icon-256x256.png"
                   alt=""
-                />
+                /> */}
                 <span className="text-sm uppercase mt-4">WPGraphQL</span>
               </div>
             </li>
