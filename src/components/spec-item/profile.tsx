@@ -21,7 +21,7 @@ const ProfileItem: React.FC = () => (
   <div>
     <p>I’m {bio}</p>
     <ul className="mt-8 whitespace-nowrap">
-      <li>
+      {/* <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
             <span className="mr-3">
@@ -33,8 +33,8 @@ const ProfileItem: React.FC = () => (
             <span>muhrusdev@gmail.com</span>
           </div>
         </div>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
             <span className="mr-3">
@@ -46,7 +46,7 @@ const ProfileItem: React.FC = () => (
             <span>14 September 1992</span>
           </div>
         </div>
-      </li>
+      </li> */}
       {/* <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
@@ -192,7 +192,7 @@ const ProfileItem: React.FC = () => (
           </div>
         </div>
       </li> */}
-      <li>
+      {/* <li>
         <div className="sm:flex bg-gray-900 rounded-md py-2 px-4 mt-4">
           <div className="w-2/5 text-gray-500 sm:text-white flex items-center">
             <span className="mr-3">
@@ -235,7 +235,7 @@ const ProfileItem: React.FC = () => (
             </span>
           </div>
         </div>
-      </li>
+      </li> */}
     </ul>
   </div>
 )

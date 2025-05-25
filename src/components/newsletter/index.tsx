@@ -25,7 +25,7 @@ const Newsletter: React.FC = () => {
                   onMouseLeave={handleMouseLeave}
                   className="py-2 font-semibold rounded-md px-4 hover:bg-indigo-700 transition-all bg-indigo-600"
                 >
-                  <a href="mailto:mhmrofficial@gmail.com">Contact me</a>
+                  <a href="#">Contact me</a>
                 </button>
               </div>
               <div className="px-4">

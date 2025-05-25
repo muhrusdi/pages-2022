@@ -269,7 +269,7 @@ const ExperiencesItem: React.FC = () => (
             </div>
           </div>
           <EntityPositionGroup>
-            <li className="deactive">
+            {/* <li className="deactive">
               <div className="leading-relaxed">
                 <h5 className="leading-normal sm:leading-loose">
                   Lead Front End Engineer
@@ -282,15 +282,14 @@ const ExperiencesItem: React.FC = () => (
                   Makassar, South Sulawesi, Indonesia
                 </p>
               </div>
-            </li>
+            </li> */}
             <li className="deactive">
               <div className="leading-relaxed">
                 <h5 className="leading-normal sm:leading-loose">
                   Front End Engineer
                 </h5>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
-                  March 2017 - May 2019{" "}
-                  <span className="text-indigo-500">2 yrs 4 mos</span>
+                  March 2017 - Oct 2019{" "}
                 </p>
                 <p className="text-blueGray-500 mt-3 sm:mt-0">
                   Makassar, South Sulawesi, Indonesia

@@ -57,14 +57,14 @@ const Story: React.FC = () => {
               alt=""
             />
           </div>
-          <div>
+          {/* <div>
             <StaticImage
               className="rounded-lg"
               placeholder="blurred"
               src="https://res.cloudinary.com/muhrusdi/image/upload/v1647282245/20220315_012721.jpg"
               alt=""
             />
-          </div>
+          </div> */}
           <div>
             <StaticImage
               className="rounded-lg"

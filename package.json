@@ -100,5 +100,8 @@
   },
   "bugs": {
     "url": "https://github.com/jamastek/gabo.git/issues"
+  },
+  "resolutions": {
+    "probe-image-size": "^7.0.0"
   }
 }
